@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ledi</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="shortcut icon" type="image/png" href="./img/fav.png" />
+    <link href='https://fonts.googleapis.com/css?family=Sofadi One' rel='stylesheet'>
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(fotok).click(function() {
+                $("span").toggleClass("kerko1");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="./img/DEV.png"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+        <ul class="menu">
+
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">APARTMENTS</a></li>
+            <li><a href="contactform.html" target="_blank">CONTACT</a></li>
+            <li>
+                <div class="search">
+                    <span class="kerko"> <input type="text" placeholder="Type and press enter..."></span>
+                    <div class="button-2" id='button-holder'>
+                        <img id="fotok" src='./img/search.png' width="40px">
+                    </div>
+                </div>
+            </li>
+            <a href="singin.html" target="_blank"> <input type="submit" class="singin" value="Sign In"></a>
+
+        </ul>
+    </header>
+
+    <section id="showcase">
+        <img src="img/contact.png">
+    </section>
+    <div class="container">
+        <div class="mbledhesi" id="services">
+            <div class="foto">
+                <img src="img/koman.jpg" width="100%">
+                <h3>Koman</h3>
+            </div>
+            <div class="foto">
+                <img class="perh" src="img/korca.jpg" width="100%">
+                <h3 class="vl">Korce</h3>
+            </div>
+            <div class="foto">
+                <img src="img/h4.jpg" width="100%">
+                <h3>New York</h3>
+            </div>
+            <div class="foto">
+                <img src="img/h2.jpg" width="100%">
+                <h3>Manhatan</h3>
+            </div>
+            <div class="foto">
+                <img src="img/istanbul.jpg" width="100%">
+                <h3>Istanbul</h3>
+            </div>
+            <div class="foto">
+                <img class="perh" src="img/italy.jpg" width="100%">
+                <h3 class="vl">Italy</h3>
+            </div>
+            <div class="foto">
+                <img src="img/Shkoder.jpg" width="100%">
+                <h3>Shkoder</h3>
+            </div>
+            <div class="foto">
+                <img src="img/romania.jpg" width="100%">
+                <h3>Romania</h3>
+            </div>
+            <div class="foto">
+                <img src="img/klaipeda.jpg" width="100%">
+                <h3>Klaipeda</h3>
+            </div>
+            <div class="foto">
+                <img class="perh" src="img/permet.jpg" width="100%">
+                <h3 class="vl">Permet</h3>
+            </div>
+            <div class="foto">
+                <img src="img/tirana.jpg" width="100%">
+                <h3>Tirana</h3>
+            </div>
+            <div class="foto">
+                <img src="img/theth.jpg" width="100%">
+                <h3>Theth</h3>
+            </div>
+            <div class="foto">
+                <img src="img/milan.jpg" width="100%">
+                <h3>Milan</h3>
+            </div>
+            <div class="foto">
+                <img class="perh" src="img/erseke.jpg" width="100%">
+                <h3 class="vl">Erseke</h3>
+            </div>
+            <div class="foto">
+                <img src="img/lithuania.jpg" width="100%">
+                <h3>Lithuania</h3>
+            </div>
+            <div class="foto">
+                <img src="img/erseke.jpg" width="100%">
+                <h3>Erseke</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    <footer id="footer-home">
+        <div class="footer-copy">
+            <h2>Houses for sale</h2>
+            <p class="copy">Ledion Bezati Copyright &copy; 2018</p>
+        </div>
+
+        <div class="payment">
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fas fa-credit-card"></i>
+            <i class="far fa-money-bill-alt"></i>
+        </div>
+    </footer>
+</body>
+
+</html>

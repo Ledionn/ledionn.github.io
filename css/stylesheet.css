@@ -1,0 +1,870 @@
+body {
+    font: 15px/1.5 "Trebuchet MS", Helvetica, sans-serif;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    margin: auto;
+}
+
+
+/*GLOBAL--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*GLOBAL--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*GLOBAL--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.container {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#showcase img {
+
+    width: 100%;
+    margin-bottom: -0.5%;
+}
+
+
+
+/* SEKSIONI I PROMOVIMEVE-------------------------------------------------------------------------------------------------------------------------------- */
+
+/* SEKSIONI I PROMOVIMEVE-------------------------------------------------------------------------------------------------------------------------------- */
+
+/* SEKSIONI I PROMOVIMEVE-------------------------------------------------------------------------------------------------------------------------------- */
+
+.mbledhesi {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    background-color: #F2F2F2;
+    grid-column-gap: 3px;
+}
+
+.foto {
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+
+
+}
+
+.foto h3 {
+
+    background-color: rebeccapurple;
+    padding: 10px;
+    margin-top: -1px;
+    border-radius: 1%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.foto img {
+    border-radius: 0.5%;
+}
+
+.foto img:hover {
+
+    opacity: 0.8;
+
+}
+
+/* SEKSIONI I AGJENTEVE--------------------------------------------------------------------------------------------------------------------------------- */
+
+/* SEKSIONI I AGJENTEVE--------------------------------------------------------------------------------------------------------------------------------- */
+
+/* SEKSIONI I AGJENTEVE--------------------------------------------------------------------------------------------------------------------------------- */
+
+.mbledhesi1 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    background-color: rebeccapurple;
+    border-bottom: solid 15px #fff;
+
+}
+
+.clients img {
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.clients p {
+
+    text-align: center;
+    padding-right: 40px;
+
+
+}
+
+
+/* header------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* header------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* header------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.header {
+    background-color: rebeccapurple;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+
+
+}
+
+.header li {
+    height: 61px;
+    margin-top: -7px;
+}
+
+.header li a {
+    color: #fff;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+    margin-top: 3px;
+
+
+}
+
+.singin {
+    border: none;
+    background-color: #fff;
+    text-align: center;
+    padding: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    color: rebeccapurple;
+
+
+
+}
+
+.singin:hover {
+    font-weight: bold;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #fff;
+    color: rebeccapurple;
+    font-weight: bold;
+    padding-bottom: 17px;
+}
+
+.header .logo {
+
+    float: left;
+    padding: 5px 20px;
+
+}
+
+.header .logo img {
+    width: 50px;
+    padding-top: 5px;
+}
+
+
+.search {
+    display: inline;
+
+
+}
+
+
+.kerko input {
+    background-color: #fff;
+    width: 0px;
+    height: 60px;
+    border: none;
+
+}
+
+.kerko1 input {
+    transition: 0.8s;
+    background-color: #fff;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-left: 1px solid rebeccapurple;
+    padding-top: 1.5%;
+    padding-left: 10px;
+    font-size: 18px;
+
+}
+
+#button-holder {
+    opacity: 0;
+    background-color: #333331;
+    cursor: pointer;
+    float: right;
+    text-align: center;
+    width: 55px;
+    height: 61px;
+    padding: 0;
+
+}
+
+.button-2 img {
+    margin-top: 18px;
+    width: 30px;
+}
+
+.button-2 img:hover {
+    width: 35px;
+}
+
+.button-2 {
+    padding: 5px;
+    animation-name: button2;
+    animation-duration: 2s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button2 {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+/* menu-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* menu-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* menu-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon-------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* menu icon-------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* menu icon-------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* menu btn---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* menu btn---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/*footer--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*footer--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*footer--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+    overflow: none;
+    padding: 1px;
+    color: #ffffff;
+    background-color: rebeccapurple;
+    text-align: center;
+}
+
+#footer-home {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #1D1F21;
+}
+
+#footer-home .copy {
+    text-align: left;
+    margin-top: 8%;
+}
+
+#footer-home h2 {
+    margin-top: -0.5%;
+    text-align: left;
+    margin-left: 7%;
+    font-family: 'Sofadi One';
+    font-size: 30px;
+}
+
+.payment {
+    text-align: right;
+    margin-right: 10%;
+
+}
+
+.payment i {
+    display: block;
+    padding: 1.8%;
+    font-size: 150%;
+}
+
+/*START OF SING IN ---------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*START OF SING IN ---------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*START OF SING IN ---------------------------------------------------------------------------------------------------------------------------------------*/
+
+.singinto {
+    background-color: rebeccapurple;
+    width: 100%;
+    margin: auto;
+
+
+
+
+}
+
+.menulog img {
+    width: 50px;
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.back i {
+    float: right;
+    padding: 15px;
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.backto {
+    margin: 0;
+    padding: 0;
+    float: right;
+    opacity: 0;
+}
+
+.back:hover .backto {
+    opacity: 1;
+    transition: all 0.8s;
+}
+
+
+#showcase-sing {
+    background-image: url('../img/contact.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 84.3vh;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+
+}
+
+.login h1 {
+    background-color: rebeccapurple;
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+
+.login {
+    float: right;
+    margin-top: 20%;
+}
+
+.login input {
+
+    display: inline-block;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+
+
+}
+
+.login form {
+    margin-top: 55px;
+}
+
+.login span {
+
+    background-color: rebeccapurple;
+    padding: 13px;
+
+}
+
+.email {
+    margin-bottom: 5px;
+
+
+}
+
+.login form .a {
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.hyr {
+    float: right;
+    margin-top: 5px;
+    text-transform: uppercase;
+    background-color: rebeccapurple;
+    color: white;
+
+
+}
+
+.butonilog input {
+    width: 80px;
+}
+
+.fundilog {
+    background: rebeccapurple;
+}
+
+
+@media only screen and (max-width: 500px) {
+    #trupising {
+        width: 100%;
+    }
+
+    #showcase-sing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .login input {
+        display: block;
+        margin-top: -10px;
+    }
+
+    .login span {
+        display: none;
+    }
+
+    .login {
+        margin-top: 45%;
+
+
+    }
+
+    .login h1 {
+        margin-bottom: 23px;
+    }
+}
+
+/*CONTACT FORM------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*CONTACT FORM------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*CONTACT FORM------------------------------------------------------------------------------------------------------------------------------------*/
+
+#showcase-contact {
+    width: 100%;
+    min-height: 84.3vh;
+    background: url('../img/contact.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mbledhesikontaktit {
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+}
+
+.contactform h1 {
+    margin-top: 0%;
+    font-family: 'Sofadi One';
+    font-size: 30px;
+}
+
+.social i {
+    font-size: 35px;
+    padding: 38px;
+
+}
+
+.infot p {
+    margin-top: 12px;
+    position: relative;
+    font-size: 25px;
+    padding: 25px;
+    color: #fff;
+    margin-left: -700px;
+    opacity: 0;
+    animation-name: infot;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    transition-duration: 1s;
+
+}
+
+@keyframes infot {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@media (max-width: 1200px) {
+    .infot p {
+        opacity: 0;
+    }
+}
+
+.social {
+    position: relative;
+    animation-name: social;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition-duration: 1s;
+}
+
+@keyframes social {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.contactform {
+    margin-top: 5%;
+}
+
+.contactform h1,
+p {
+    margin-left: 50px;
+}
+
+.contactform h1,
+p,
+form {
+    text-align: center;
+
+}
+
+.contactform input {
+    margin: 10px;
+    display: block;
+    border: none;
+    padding: 5px;
+    width: 75%;
+    height: 35px;
+    margin-left: 15%;
+
+}
+
+.contactform textarea {
+    border: none;
+    padding: 5px;
+    width: 75%;
+    display: block;
+    margin: 10px;
+    height: 100px;
+    margin-left: 15%;
+}
+
+.butonisubmit input {
+    width: 76.5%;
+    text-align: center;
+    text-transform: uppercase;
+    height: 45px;
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+
+
+@media (max-width: 780px) {
+    #showcase-contact {
+        display: grid;
+        grid-template-columns: 100%;
+
+
+
+    }
+
+    .contactform h1,
+    p {
+        margin: 0;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .contactform h1 {
+        padding: 0px;
+        margin-top: 30px;
+    }
+
+    .mbledhesikontaktit {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contactform input {
+        margin-left: 3%;
+        width: 91%;
+
+    }
+
+    .contactform textarea {
+        margin-left: 3%;
+        width: 91%;
+
+    }
+
+    .butonisubmit input {
+        width: 94%;
+    }
+
+    footer {
+        height: 45px;
+    }
+
+    .infot {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media query for menu------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Media query for menu------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Media query for menu------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+/*All media query for mobile-----------------------------------------------------------------------------------------------------------------------------*/
+
+/*All media query for mobile-----------------------------------------------------------------------------------------------------------------------------*/
+
+/*All media query for mobile-----------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 770px) {
+
+    body {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .services {
+        background: none;
+        background-color: #F2F2F2;
+    }
+
+    .kerko input {
+        border: none;
+        width: 0;
+    }
+
+    .kerko1 input {
+        border: none;
+        width: 100%;
+        height: 50px;
+
+    }
+
+    #button-holder {
+        margin-top: 4px;
+        float: left;
+        width: 55px;
+        height: 55px;
+    }
+
+    .button-2 img {
+        margin: 0;
+        margin-top: 20%;
+    }
+
+    #showcase img {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .foto img {
+        width: 103%;
+        border: none;
+        margin-left: -3px;
+    }
+
+    .mbledhesi {
+        display: grid;
+        grid-template-columns: 48.5% 48.5%;
+        grid-column-gap: 3%;
+        border-top: 7px solid #fff;
+
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    .foto h3 {
+        padding: 2%;
+        font-size: 14px;
+        margin: 0;
+        float: none;
+        border: none;
+        width: 99.5%;
+        margin-left: -2%;
+    }
+
+    .mbledhesi1 {
+        display: block;
+        width: 100%;
+        border: none;
+        border-top: 10px solid #fff;
+
+    }
+
+    .clients {
+        padding: 10px;
+    }
+
+    .clients p {
+        padding: 5px;
+    }
+
+    .mbledhesi2 {
+        display: block;
+        width: 100%;
+    }
+
+    footer {
+        border-top: solid 10px #fff;
+
+    }
+
+    .mbledhesikontaktit {
+        display: block;
+        width: 100%;
+        margin: 0#;
+        padding: 0;
+        float: none;
+    }
+
+    .social {
+        display: none;
+    }
+
+
+}
